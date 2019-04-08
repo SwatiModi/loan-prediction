@@ -11,9 +11,11 @@ df_test = pd.read_csv('test.csv')
 # print(df_train.shape)
 # print(df_train.head())
 
-print(df_train['Loan_Status'].value_counts())
-print(df_train['Loan_Status'].value_counts(normalize = True))
-df_train["Loan_Status"].value_counts().plot.bar()
+# print(df_train['Loan_Status'].value_counts())
+# print(df_train['Loan_Status'].value_counts(normalize = True))
+# df_train["Loan_Status"].value_counts().plot.bar()
+
+print(df_train.isnull().sum())
 
 # print('\n\nExplore Testing Data')
 # print(df_test.columns)
